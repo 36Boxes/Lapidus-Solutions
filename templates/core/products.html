@@ -1,0 +1,161 @@
+{% extends 'core/base.html' %}
+{% block Title %}
+    Lapidus Solutions - Products
+{% endblock Title %}
+{% block content %}
+    <div class="jumbotron jumbotron-fluid1">
+        <div class="container">
+            <h3 class="f-block text-center">Our Products</h3>
+            <br><br>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <a href="{% url 'core:about' %}" class="btn btn-light">Find Out <br>About Us!</a>
+                </div>
+                <div class="col"></div>
+                <div class="col">
+                    <a href="{% url 'core:enquiry' %}" class="btn btn-light">Submit An Enquiry<br> to Purchase!</a>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row no-gutters">
+    <div class="col-lg">
+        <div class="container">
+            <div class="card-7">
+                <div class="card-header">
+                    <h3 class="text-white text-center">Soft Drinks</h3>
+                </div>
+            </div>
+            <br>
+            <br>
+                    <div class="row">
+                        {% for item in items %}
+                            {% if item.Item_Category == 'Soft Drink' %}
+                                {% if forloop.counter  in nums %}
+                                    <div class="w-100"></div>
+
+                                {% endif %}
+                                <div class="col-lg">
+                                    <div class="container">
+                                        <div class="card-7">
+                                            <div class="card-body">
+                                                <div class="row no-gutters">
+                                                    <div class="col">
+                                <img class="card-img-top" src="{{ item.Item_Picture.url }}">
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="container">
+                                                            <h4 style="margin-top: 40%" class="text-white">{{ item.Item_Name }}</h4>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <br>
+                                                    <div class="col"><h4 class="text-center text-white">£{{ item.Item_Price }}</h4></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <br>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    <div class="w-100"></div>
+                    </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="container">
+            <div class="card-7">
+                <div class="card-header">
+                    <h3 class="text-white text-center">Confectioneries</h3>
+                </div>
+            </div>
+                                <div class="row">
+                        {% for item in items %}
+                            {% if item.Item_Category == 'Confectionery' %}
+                                {% if forloop.counter  in nums %}
+                                    <div class="w-100"></div>
+
+                                {% endif %}
+                                <div class="col-lg">
+                                    <div class="container">
+                                        <div class="card-7">
+                                            <div class="card-body">
+                                                <div class="row no-gutters">
+                                                    <div class="col">
+                                <img class="card-img-top" src="{{ item.Item_Picture.url }}">
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="container">
+                                                            <h4 style="margin-top: 40%" class="text-white">{{ item.Item_Name }}</h4>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <br>
+                                                    <div class="col"><h4 class="text-center text-white">£{{ item.Item_Price }}</h4></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <br>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    <div class="w-100"></div>
+                    </div>
+        </div>
+    </div>
+    <div class="w-100"></div>
+        <br>
+        <br>
+        <br>
+    <div class="col">
+               <div class="container">
+            <div class="card-7">
+                <div class="card-header">
+                    <h3 class="text-white text-center">Protein & Pre-Workout</h3>
+                </div>
+            </div>
+                                       <div class="row">
+                        {% for item in items %}
+                            {% if item.Item_Category == 'Fitness Food' %}
+                                {% if forloop.counter  in nums %}
+                                    <div class="w-100"></div>
+
+                                {% endif %}
+                                <div class="col-lg">
+                                    <div class="container">
+                                        <div class="card-7">
+                                            <div class="card-body">
+                                                <div class="row no-gutters">
+                                                    <div class="col">
+                                <img class="card-img-top" src="{{ item.Item_Picture.url }}">
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="container">
+                                                            <h4 style="margin-top: 40%" class="text-white">{{ item.Item_Name }}</h4>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <br>
+                                                    <div class="col"><h4 class="text-center text-white">£{{ item.Item_Price }}</h4></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <br>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    <div class="w-100"></div>
+                    </div>
+        </div>
+    </div>
+    </div>
+{% endblock content %}

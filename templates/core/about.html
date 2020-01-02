@@ -1,0 +1,119 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block Title %}
+    Lapidus Solutions - About
+{% endblock Title %}
+{% block content %}
+        <div class="jumbotron jumbotron-fluid2">
+  <div class="container">
+
+    <h3 class="f-block text-center">About Us</h3>
+
+    <br>
+    <br>
+      <div class="row">
+          <div class="col"></div>
+          <div class="col">
+              <a href="{% url 'core:products' %}" class="btn btn-light">Check Out <br>Our Products!</a>
+          </div>
+          <div class="col"></div>
+          <div class="col">
+              <a href="{% url 'core:enquiry' %}" class="btn btn-light">Submit An Enquiry<br> to Purchase!</a>
+          </div>
+          <div class="col"></div>
+      </div>
+
+  </div>
+</div>
+      <div class='row no-gutters'>
+
+    <div class='col-md-3'>
+        <div class="container">
+            <div class="card-7">
+                <div class="card-header">
+            <h3 class="text-center text-white" style="text-decoration: underline">What We Do</h3>
+                </div>
+                <div class="card-body">
+       <p class="text-center text-white">Lapidus Solutions Ltd specialises
+           in providing quality products at wholesale prices including products from Asia,
+       The Far East, Africa, Europe and the Americas. At Lapidus Solutions we aim to provide
+           the best in health & fitness related foods that includes all the well known soft drink products, a fine selection of confectioneries and other quality food products</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="card-7 border-0 mb-3">
+                <img class="card-img-top" src="{% static 'core/Coke_PageProperties.jpg' %}">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-white">Check Out Our New Products</h5>
+                    <br>
+                    <a style="background-color: #e66c49" class="btn text-white" href="tel:07472703733">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='col'>
+        <div class="container">
+            <br>
+            <h3 class="text-center text-white">Our Aim</h3>
+       <p class="text-center text-white">Our aim is to provide all our customers a comprehensive range of
+       products at sector-leading prices while still maintaining our well known and loved customer service.</p>
+            <br>
+            <div class="row">
+                <div class="col">
+                            <div class="card-7 border-0 mb-3">
+                                <br>
+                                <br>
+                                <br>
+                                <div class="container">
+                                    <div class="container">
+                <img style="height: 200px;" class="card-img-top" src="{% static 'core/truck-loading-solid.svg' %}">
+                                    </div>
+                                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title text-white">Wholesale</h5>
+                    <p class="text-white">The Company's mission is to be the 'Best Way to Grow your Food and Drinks Business'
+                    <br>
+                    <br>
+                    <br>
+                        We Strive to do this by offering customers a comprehensive range of products and promotions at
+                        sector-leading prices, unparalleled availablility and customer service which is second to none.
+                                            <br>
+                    <br>
+                    <br>
+                        To find out more please submit an enquiry or give us a call on :</p><br>
+                        <br>
+                    <h3 class="text-white"><strong>07123123123</strong></h3>
+
+
+                    <br>
+                    <a style="background-color: #e66c49" class="btn text-white" href="tel:07472703733">Find Out More!</a>
+                </div>
+            </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card-7 border-0 mb-3">
+                <img class="card-img-top" src="{% static 'core/grenade_carb-killa_fully-loaded-bundle_protein-pick-mix_uk__41249.1523453992.png' %}">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-white">Our Products</h5>
+                    <p class="text-white">We provide a multitude of health & fitness products some of which include:</p>
+                        <p class="text-white" style="margin-bottom: 10px">Coca Cola Family</p>
+                        <p class="text-white" style="margin-bottom: 10px">Grenade Protein</p>
+                        <p class="text-white" style="margin-bottom: 10px">Nocco Products</p>
+                        <p class="text-white" style="margin-bottom: 10px">And Many More!</p>
+                    <br>
+                    <a style="background-color: #e66c49" class="btn text-white" href="tel:07472703733">Find Out More!</a>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+{% endblock content %}
