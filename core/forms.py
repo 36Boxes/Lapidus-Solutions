@@ -33,6 +33,9 @@ class Enquiry_Form(forms.Form):
         'class': 'form-control'
     }))
     item_enquiry = forms.ChoiceField(choices= Itemz)
-
+    extra_info = forms.CharField(max_length=5000, required=False, widget=forms.Textarea(attrs={
+        'placeholder' : 'Any extra questions you may have',
+        'class': 'form-control'
+    }))
 
 
